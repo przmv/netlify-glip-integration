@@ -1,0 +1,12 @@
+runtime: go
+api_version: go1
+
+env_variables:
+  GLIP_HOOK_URL: 'https://hooks.glip.com/webhook/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
+
+handlers:
+- url: /.*
+  script: _go_app
+
+skip_files:
+- ^(.*/)?\.md$
